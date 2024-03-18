@@ -1,6 +1,6 @@
 @use "../abstracts";
 .contact {
-  display: none;
+  display: flex;
   gap: 20px;
   flex-direction: column;
   position: fixed;

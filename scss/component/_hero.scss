@@ -1,3 +1,4 @@
+@use "../abstracts";
 .hero {
   &__heading {
     font-weight: 600;
@@ -20,17 +21,32 @@
   }
   &__image {
     object-fit: contain;
+    @include abstracts.screen(lg) {
+      width: 210px;
+    }
+    @include abstracts.screen(md) {
+      width: 150px;
+    }
+    @include abstracts.screen(sm) {
+      width: 120px;
+    }
   }
   &__item {
     margin-top: 60px;
     margin-bottom: 60px;
     &-inner {
       align-items: center;
+      @include abstracts.screen(sm) {
+        align-items: flex-start;
+        gap: 10px;
+      }
     }
   }
   &__col {
     display: flex;
-    flex: 1;
+    flex-shrink: 0;
+    flex-grow: 0;
+
     &:nth-child(2) {
       flex-direction: column;
     }
