@@ -28,7 +28,7 @@
       width: 150px;
     }
     @include abstracts.screen(sm) {
-      width: 120px;
+      width: 80px;
     }
   }
   &__item {
@@ -38,7 +38,6 @@
       align-items: center;
       @include abstracts.screen(sm) {
         align-items: flex-start;
-        gap: 10px;
       }
     }
   }

@@ -1661,7 +1661,7 @@ select {
 }
 @media (max-width: 575.98px) {
   .hero__image {
-    width: 120px;
+    width: 80px;
   }
 }
 .hero__item {
@@ -1674,7 +1674,6 @@ select {
 @media (max-width: 575.98px) {
   .hero__item-inner {
     align-items: flex-start;
-    gap: 10px;
   }
 }
 .hero__col {
