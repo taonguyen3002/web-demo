@@ -42,3 +42,14 @@ select {
   margin: 30px auto;
   border-radius: 999px;
 }
+.text {
+  &--bold {
+    font-weight: 700;
+  }
+  &--large {
+    font-size: 2.4rem;
+  }
+  &--blue {
+    color: blue;
+  }
+}
